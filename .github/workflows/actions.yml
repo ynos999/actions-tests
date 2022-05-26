@@ -2,7 +2,7 @@ name: My-Githab-action
 on:  
   push:
     branches:
-      - master
+     - master
 jobs:
   build_my_test:
   
