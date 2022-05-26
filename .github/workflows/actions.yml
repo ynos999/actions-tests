@@ -2,18 +2,23 @@ name: My-Githab-action
 on:  
   push:
     branches:
-      -master
+      - master
 jobs:
-  build:
+  build_my_test:
+  
     runs-on: ubuntu-latest
+    
     steps:
       - name: Git clone
         run: actions/checkout@v3
+        
       - name: Multiple comands
         run: |
           ls -la
           zip -version
           echo " Hello!"
-      - name: Print my text
-        run: echo "Test is done!"
-        #needs: [Build_ubuntu_tests] - Šis ir lai palaiztos nākamais dokeris, figūriekavās norādam iepriekēšā
+          
+      - name: Check pyton version
+        run: pyton3 -version
+        
+        #needs: [build_my_test] - Šis ir lai palaiztos nākamais dokeris, figūriekavās norādam iepriekēšā.
