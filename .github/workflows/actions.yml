@@ -1,10 +1,10 @@
 name: My-Githab-action
-on:
+on:  
   push:
     branches:
       -master
 jobs:
-  Build_ubuntu_tests:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Git clone
