@@ -15,7 +15,7 @@ jobs:
       - name: Multiple comands
         run: |
           ls -la
-          zip -version
+          zip --version
           echo " Hello!"
           
       - name: Check pyton version
