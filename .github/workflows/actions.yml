@@ -1,7 +1,7 @@
 name: My-Githab-action
 on:  
   push:
-    branches:
+    branches-ignore:
      - master
 jobs:
   build_my_test:
