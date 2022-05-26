@@ -22,3 +22,14 @@ jobs:
         run: python3 --version
         
         #needs: [build_my_test] - Šis ir lai palaiztos nākamais dokeris, figūriekavās norādam iepriekēšā.
+
+  build_deploy:
+    runs-on: ubuntu-latest
+    needs: [build_my_test]
+    steps:
+      - name: Print my text
+        run: echo "Deploy test!"
+      - name: Git clone
+        uses: actions/checkout@v3
+      - name: Check pyton version
+        run: python3 --version
