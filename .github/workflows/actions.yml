@@ -19,6 +19,6 @@ jobs:
           echo " Hello!"
           
       - name: Check pyton version
-        run: pyton3 --version
+        run: python3 --version
         
         #needs: [build_my_test] - Šis ir lai palaiztos nākamais dokeris, figūriekavās norādam iepriekēšā.
