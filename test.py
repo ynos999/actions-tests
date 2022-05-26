@@ -21,7 +21,7 @@ def pdf_splitter(path):
             fileprefix = str(pageNumber+1)
 
         output_filename = "/var/www/html/" + str(laiksMape) + "/{}_{}_{}.pdf".format(
-            fname, laiks, fileprefix) # Pieliekās faila nosaukums + laika formāts + lapas nr. pēc kārtas.
+            fname, laiks, fileprefix)
         with open(output_filename, 'wb') as out:
             pdf_writer.write(out)
 
